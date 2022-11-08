@@ -1,0 +1,731 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* BODY */
+
+body{
+    background-color: #111b21;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+/* HEADER */
+
+
+header {
+    display: flex;
+    background-color: #2a3942;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+header .img-logo {
+    height: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.nombre-empresa {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+header .navegacion {
+    margin-left: 255px;
+    text-align: center;
+}
+
+
+.header-list .navlist {
+    list-style: none;
+    display: inline-block;
+}
+
+
+nav a {
+    padding-right: 10px;
+    font-size: 15px;
+    transition: all 0.2s;
+}
+
+nav a:hover {
+    color: #00a884;
+}
+
+.header .user-link {
+    border-radius: 30px;
+}
+
+.header .user {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 30px;
+    transition: all 0.2s;
+}
+
+.header .user:hover {
+    border: 2px solid #00a884;
+    border-radius: 30px;
+    background-color: #00a884;
+
+}
+
+/* FOOTER */
+
+
+footer .empresa-footer {
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    background-color: #2a3942;
+    margin-top: 25px;
+}
+
+.footer .empresa-footer h4{
+    padding: 10px;
+    color: #808080;
+}
+
+.terminos-footer .footer-lista  {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+footer div ul li {
+    list-style: none;
+    display: inline;
+    padding: 0px 5px;
+
+}
+
+.footer-lista a{
+    color: #000000;
+    font-style: oblique;
+}
+
+
+
+
+/* ------------------------------------------------index -------------------------------------------------------*/
+
+.main0, .section-header, .section-header2 {
+    display: flex;
+    margin: 100px;
+    margin-left: 30px;
+    background-color: #2a3942;
+    width: 95%;
+    height: 500px;
+
+}
+
+
+.main0 img{
+    width: 700px;
+}
+
+section img{
+    width: 700px;
+}
+
+
+
+.main0 h1, .section-header h2, .section-header2 h2 {
+    font-size: 35px;
+    text-align: left;
+    font-weight: 900;
+    letter-spacing: 2px;
+    padding: 15px ;
+    color: #ffd279;
+    
+}
+
+.main0 h1 {
+    margin: 0;
+}
+
+.main0 p, .section-header p, .section-header2 p {
+    text-align: left;
+    font-size: 25px;
+    padding: 15px;
+    font-family: 'Fjalla One',sans-serif;
+
+
+}
+
+
+/* ----------------------------------------------------- planes prepago---------------------------------------- */
+
+/* ---------MENU COMBOS------------- */
+.menu-combos {
+    background-color: #53bdeb;
+    margin: 100px;
+    padding: 10px 5px ; 
+    text-align: center;
+    border-radius: 30px;
+}
+
+.menu-combos .titulo-menu-combos{
+    color: #ffd279;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.menu-combos .descripcion-menu-combos {
+    color: white;
+}
+
+
+/* ----- COMBOS --------- */
+
+.combos {
+    display: flex;
+    width: 100%;
+    height: 400px;
+}
+
+
+.combo {
+    margin: 20px;
+    text-align: center;
+    border-top-right-radius: 135px;
+    border-bottom-left-radius: 135px;
+    background-color: #2a3942;
+    height: 450px;
+    width: 400px;
+    border: 8px #00a884 solid;
+    border-style: ridge;
+
+
+}
+
+.titulo-combo {
+    border: 0;
+    text-align: left;
+    margin-left: 0px;
+    font-weight: 900;
+    padding: 8px;
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: #ffd279;
+
+
+}
+
+.precio-combo {
+    border-top-right-radius: 125px;
+    border-bottom-right-radius: 16px;
+    font-size: 40px;
+    font-weight: 900;
+    padding: 10px;
+    background-color: #53bdeb;
+
+
+}
+
+.lista-combo {
+    padding-top: 20px;
+
+}
+
+.item-lista-combo {
+    list-style: none;
+    padding-left: 15px;
+    padding-bottom: 20px;
+    list-style-position: inside;
+    text-align: left;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.item-lista-combo::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    display: inline-block;
+    background-image: url(../img/pngwing.com.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.span-lista {
+    color: #ffd279;
+    font-weight: 700;
+}
+
+.boton {
+    background-color: #ffffff;
+    color: #00a884;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight:900;
+    border: 0;
+    transition: all 0.2s;
+    
+}
+
+.boton:hover{
+    background-color: #00a884;
+    color: white;
+    border-radius: 30px;
+
+}
+
+
+/* ---------MENU COMBOS EXTRA------------- */
+.menu-combos-extra {
+    background-color: #53bdeb;
+    margin: 100px;
+    margin-top: 200px;
+    padding: 10px 5px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.titulo-menu-combos-extra{
+    color: #ffd279;
+    font-size: 50px;
+    font-weight: 900;
+
+}
+
+.descripcion-menu-combos-extra {
+    color: white;
+}
+
+/* --------- COMBOS EXTRA --------*/
+
+.combos-extra{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.combo-extra {
+    margin: 30px;
+    text-align: center;
+    border-top-right-radius: 135px;
+    border-bottom-left-radius: 135px;
+    height: 450px;
+    width: 350px;
+    background-color: #2a3942;
+    border: 8px #00a884 solid;
+    border-style: ridge;
+}
+
+.titulo-combo-extra {
+    border: 0;
+    padding: 8px;
+    padding-left: 15px;
+    font-size: 50px;
+    font-weight: 900;
+    text-align: left; 
+    color: #ffd279;
+}
+
+.precio-combo-extra {
+    border-top-right-radius: 70px;
+    border-bottom-right-radius: 1px;
+    font-size: 40px;
+    font-weight: 900;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #53bdeb;
+
+}
+
+.lista-combo-extra {
+    padding: 5px;
+}
+
+
+
+.item-lista-combo-extra {
+    list-style: none;
+    padding-left: 15px;
+    list-style-position: inside;
+    text-align: left;
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+
+.item-lista-combo-extra::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    display: inline-block;
+    background-image: url(../img/pngwing.com.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.span-lista-extra {
+    color: #ffd279;
+    font-weight: 700;
+}
+
+.boton-extras {
+    background-color: white;
+    color: #00a884;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 900;
+    border: 0;
+    transition: all 0.2s;
+    
+}
+
+.boton-extras:hover{
+    background-color: #00a884;
+    color: white;
+    border-radius: 30px;
+
+}
+
+
+
+
+
+
+
+/* --------------------------------------------------planes factura-------------------------------------------- */
+
+/* ----------MENU COMBOS POSPAGO---------- */
+
+.menu-combos-pospago {
+    background-color: #53bdeb;
+    border-radius: 30px;
+    margin: 100px;
+    text-align: center;
+    padding: 10px 5px;
+}
+
+.titulo-menu-combos-pospago {
+    color: #ffd279;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+
+
+.descripcion-menu-combos-pospago {
+    color: #ffffff;
+}
+
+.link-parrafo {
+    text-decoration: underline;
+    color: #ffd279;
+    font-weight: 500;
+}
+
+
+/* -----------COMBOS------------- */
+
+.combos-pospago {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    justify-content: space-between;
+}
+
+.combo-pospago {
+    border: 8px #00a884 solid;
+    border-style: ridge;
+    margin: 20px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #2a3942;
+    width: 400px;
+    height: 450px;
+    border-bottom-right-radius: 135px;
+    border-top-left-radius: 135px;
+}
+
+
+.titulo-combo-pospago{
+    padding: 20px;
+    font-size: 50px;
+    text-align: center;
+    padding-right: 20px;
+    color: #ffd279;
+    font-weight: 900;
+}
+
+.precio-combo-pospago {
+    border-top-left-radius: 125px;
+    border-bottom-left-radius: 16px;
+    font-size: 40px;
+    font-weight: 900;
+    padding: 10px;
+    background-color: #53bdeb;
+}
+
+.lista-combo-pospago {
+    margin-top: 20px;
+}
+
+.item-lista-combo-pospago {
+    list-style: none;
+    padding-left: 15px;
+    padding-bottom: 20px;
+    list-style-position: inside;
+    text-align: left;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.item-lista-combo-pospago::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    display: inline-block;
+    background-image: url(../img/pngwing.com.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.span-lista-pospago {
+    color: #ffd279;
+    font-weight: 700;
+}
+
+.boton-pospago {
+    background-color: white;
+    color: #00a884;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 900;
+    border: 0;
+    transition: all 0.2s;
+    
+}
+
+.boton-pospago:hover{
+    background-color: #00a884;
+    color: white;
+    border-radius: 30px;
+
+}
+
+
+/* --------------------------------------------------os club---------------------------------------------------*/
+
+.inicio-osclub {
+    text-align: center;
+    background-color: #53bdeb;
+    margin: 25px 30px;
+    border-radius: 30px;
+
+}
+
+.titulo-osclub {
+    font-size: 80px;;
+    padding-top: 5px;
+    color: #ffd279;
+
+}
+
+.parrafo-osclub {
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: #ffffff;
+}
+
+.inicio-osclub2 {
+    text-align: center;
+    background-color: #53bdeb;
+    margin: 25px 30px;
+    border-radius: 30px;
+}
+
+.titulo-osclub2 {
+    color: #ffd279;
+    font-size: 60px;
+    padding-top: 10px;
+}
+
+.parrafo-osclub2 {
+    color: #ffffff;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+
+
+
+
+.imgs-descuento {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.imgs-descuento .img-descuento {
+    width: 400px;
+    height: 350px;
+    margin: 0px 15px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+/* -----------------------------------ayuda---------------------------------------------------------------------- */
+
+.titulo-preguntas-frecuentes {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 75px;
+    color: #ffd279;
+}
+
+.categorias {
+    display: inline;
+    text-align: center;
+}  
+
+.nav-pf {
+    background-color: #53bdeb;
+    border-radius: 10px;
+    padding: 20px 10px;
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.navlink-pf {
+    font-size: 15px;
+    padding: 15px;
+    font-weight: 900;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+.navlink-pf:hover {
+    color: #00a884;
+    font-size: 15px;
+    text-shadow: #000000 1px 1px 10px;
+
+}
+
+.categoria {
+    margin: 10px auto;
+    margin-bottom: 25px;
+    text-align: center;
+    background-color: #2a3942;
+    width: 800px;
+    height: 200px;
+    border-radius: 30px;
+}
+
+.titulo-categoria {
+    color: #ffd279;
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+.lista-desc {
+    text-align: left;
+}
+
+.termino {
+    font-weight: 900;
+    font-size: 20px;
+    padding-left: 30px;
+    letter-spacing: 1px;
+}
+
+.definicion {
+    padding-left: 55px ;
+}
+
+.parrafo-form {
+    margin: 30px auto;
+    width: 700px;
+    height: 130px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #53bdeb;
+    color: #ffd279;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.formulario {
+    background-color: #00a884;
+    border-radius: 30px;
+    margin: 20px auto;
+    height: 350px;
+    width: 400px;
+}
+
+.label {
+    font-size: 20px;
+    color: #ffffff;
+    display: block;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+input {
+    display: block;
+}
+
+.input-nombre {
+    border-radius: 50px;
+    margin-left: 20px;
+}
+
+.input-mail {
+    border-radius: 50px;
+    margin-left: 20px;
+}
+
+.input-comentario {
+    border-radius: 0px;
+    margin-left: 20px;
+    height: 100px;
+    width: 300px;
+}
+
+.input-sumbit {
+    height: 30px;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 25px;
+
+}
