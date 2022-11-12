@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Overloaded Signal</title>
 </head>
 <body>
@@ -33,25 +34,44 @@
         <a id="user" href="#" class="user-link"><img class="user" src="img/kisspng-computer-icons-user-membership-vector-5b498fc79b8393.689490051531547591637.png" alt="user"></a>
     </header>
     <main class="main0">
+         <h1 data-aos="fade-up"
+         data-aos-anchor-placement="center-bottom" class="descripcion" data-aos="zoom-in">OVERLOADEDSIGNAL</h1>
         <div>
-            <h1 class="descripcion">OVERLOADEDSIGNAL</h1>
-            <p class="parrafo">Nuestra empresa lanzo este proyecto a mediados del 2016, que tenia como objetivo brindar Internet, datos, llamadas y mensajes mediante señal satelital, de esta manera se eliminarian las "zonas muertas" de poca recepcion o nula conectividad. Esto quiere decir que podrias estar en cualquier lugar del mundo sin preocuparte ya que la señal viajaria desde nuestros satelites hacia la eSim de tu dispositivo movil, a diferencia de las demas empresas que dependen de la cantidad de antenas que haya en la zona y la distancia a la que te encuentres de ellas.</p>
+            <p class="parrafo" data-aos="zoom-in-up">Nuestra empresa lanzó este proyecto a mediados del 2016, que tenia como objetivo brindar Internet, datos, llamadas y mensajes mediante señal satelital, de esta manera se eliminarían las "zonas muertas" de poca recepción o nula conectividad. Esto quiere decir que podrias estar en cualquier lugar del mundo sin preocuparte ya que la señal viajaría desde nuestros satelites hacia la eSim de tu dispositivo móvil, a diferencia de las demas empresas que dependen de la cantidad de antenas que haya en la zona y la distancia a la que te encuentres de ellas.</p>
         </div>
-        <img src="img/busca-senal-bosque.png" alt="logo de la empresa">
     </main>
     <section class="section-header">
         <img src="img/satelites-planeta.png" alt="satelites">
         <div>
-            <h2 class="descripcion">SEÑAL DE ALTA VELOCIDAD DONDE SEA QUE ESTES</h2>
-            <p class="parrafo">Actualmente contamos con mas de 1.900 satelites en orbita alrededor del mundo, con esto se logra la alta velocidad de internet de baja latencia, conexion a nivel global al alcance de cualquiera y su alta fiabilidad sin microcortes. Aunque tenemos planeado enviar mas satelites a mas regiones para establecer una mejor conexion entre los servidores y los clientes.</p>
+            <h2 class="descripcion" data-aos="fade-left">SEÑAL DE ALTA VELOCIDAD DONDE SEA QUE ESTES</h2>
+            <p class="parrafo" data-aos="fade-left">Actualmente contamos con mas de 1.900 satelites en órbita alrededor del mundo, con esto se logra la alta velocidad de internet de baja latencia, conexion a nivel global al alcance de cualquiera y su alta fiabilidad sin microcortes. Aunque tenemos planeado enviar mas satelites a mas regiones para establecer una mejor conexión entre los servidores y los clientes.</p>
+            <a href="#" class="boton-info" data-aos="fade-up-left">MAS INFORMACION</a>
         </div>
     </section>
     <section class="section-header2">
         <div>    
-            <h2 class="descripcion">SERVICIO TECNICO LAS 24 HORAS DEL DIA</h2>
-            <p class="parrafo">Contamos con atencion 24/7 por cualquier duda o inconveniente que presente, nuestros empleados estaran a la espera para poder ayudarte a solucionar todos tus problemas.</p>
+            <h2 class="descripcion" data-aos="fade-right">SERVICIO TÉCNICO LAS 24 HORAS DEL DÍA</h2>
+            <p class="parrafo" data-aos="fade-right">Contamos con atención 24/7 por cualquier duda o inconveniente que presente, nuestros empleados estarán a la espera para poder ayudarte a solucionar todos tus problemas.</p>
+            <a href="#" class="boton-info" data-aos="fade-up-right">SOPORTE</a>
         </div>
-        <img src="img/telemarketer-f.png" alt="servicio tecnico">
+        <img src="img/telemarketer-m.png" alt="servicio tecnico">
+    </section>
+    <section class="section-header3">
+        <img src="img/movil.jpg" alt="satelites">
+        <div>
+            <h2 class="descripcion" data-aos="fade-left">ADMINISTRA TU PLAN DESDE NUESTRA APLICACIÓN</h2>
+            <p class="parrafo" data-aos="fade-left">Recomendamos que instales nuestra aplicación móvil para que puedas obtener una mejor experiencia con nuestro servicio.</p>
+            <a href="#" class="boton-info" data-aos="fade-up-left">APP STORE</a>
+            <a href="#" class="boton-info2" data-aos="fade-up-left">PLAY STORE</a>
+        </div>
+    </section>
+    <section class="section-header4">
+        <div>    
+            <h2 class="descripcion" data-aos="fade-right">PRUEBA NUESTRO SERVICIO ANTES DE CONTRATAR</h2>
+            <p class="parrafo" data-aos="fade-right">Puedes comunicarte con nuestro soporte para que podamos brindarte una prueba gratuita de 3 días.</p>
+            <a href="#" class="boton-info" data-aos="fade-up-right">COMIENZA TU PRUEBA</a>
+        </div>
+        <img src="img/prueba.jpg" alt="servicio tecnico">
     </section>
     <footer class="footer">
         <div class="empresa-footer">
@@ -63,9 +83,13 @@
                 <li class="item-lista"><a href="#">Terminos y condiciones | </a></li>
                 <li class="item-lista"><a href="#">Centro de privacidad | </a></li>
                 <li class="item-lista"><a href="#">Trabaja con nosotros | </a></li>
-                <li class="item-lista"><a href="#">Todos los derechos reservados para Overloaded Signal © 2022</a></li>
+                <li class="item-lista"><a href="#">Todos los derechos reservados para Cellitti Santiago © 2022</a></li>
             </ul>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

@@ -9,9 +9,13 @@
 /* BODY */
 
 body{
-    background-color: #111b21;
+    background-color: #000000;
     font-family: "Roboto", sans-serif;
     color: white;
+}
+
+body p {
+    font-family: sans-serif;
 }
 
 /* HEADER */
@@ -19,7 +23,7 @@ body{
 
 header {
     display: flex;
-    background-color: #2a3942;
+    background-color: #000000;
     justify-content: space-between;
     align-items: center;
     height: 100px;
@@ -38,10 +42,9 @@ header .logo {
 }
 
 .nombre-empresa {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 400;
-}
-
+} 
 
 a {
     text-decoration: none;
@@ -49,7 +52,6 @@ a {
 }
 
 header .navegacion {
-    margin-left: 255px;
     text-align: center;
 }
 
@@ -71,14 +73,15 @@ nav a:hover {
 }
 
 .header .user-link {
-    border-radius: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
 
 .header .user {
     width: 50px;
     height: 50px;
-    margin-right: 10px;
-    border-radius: 30px;
+    background-color: #ffffff;
+    border-radius: 50%;
     transition: all 0.2s;
 }
 
@@ -98,7 +101,7 @@ footer .empresa-footer {
 
 footer {
     width: 100%;
-    background-color: #2a3942;
+    background-color: #000000;
     margin-top: 25px;
 }
 
@@ -120,7 +123,7 @@ footer div ul li {
 }
 
 .footer-lista a{
-    color: #000000;
+    color: #ffffff;
     font-style: oblique;
 }
 
@@ -129,48 +132,109 @@ footer div ul li {
 
 /* ------------------------------------------------index -------------------------------------------------------*/
 
-.main0, .section-header, .section-header2 {
+.section-header {
     display: flex;
-    margin: 100px;
-    margin-left: 30px;
-    background-color: #2a3942;
-    width: 95%;
+    width: 100%;
+    height: 500px;
+
+}
+
+.section-header img {
+    justify-content: flex-end;
+}
+
+.section-header2 {
+    display: flex;
+    margin-top: 100px;
+    width: 100%;
+    height: 500px;
+
+}
+
+.section-header2 img {
+    align-items: flex-end;
+    margin-right: 0px;
+}
+
+.section-header3 {
+    display: flex;
+    margin-top: 100px;
+    width: 100%;
+    height: 500px;
+}
+.section-header4 {
+    display: flex;
+    margin-top: 100px;
+    width: 100%;
     height: 500px;
 
 }
 
 
-.main0 img{
-    width: 700px;
-}
-
-section img{
-    width: 700px;
-}
-
-
-
-.main0 h1, .section-header h2, .section-header2 h2 {
-    font-size: 35px;
-    text-align: left;
-    font-weight: 900;
-    letter-spacing: 2px;
-    padding: 15px ;
-    color: #ffd279;
-    
-}
-
-.main0 h1 {
+.main0 {
+    background-image: url(../img/desierto-2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 100%;
+    height: 800px;
     margin: 0;
 }
 
-.main0 p, .section-header p, .section-header2 p {
+.main0 h1 {
+    text-align: center;
+    padding: 60px 0px;
+    font-size: 60px ;
+    margin: 0;
+}
+
+.main0 p {
+    text-align: center;
+    padding: 0px 200px 0px;
+    font-size: 16px ;
+    font-weight: normal;
+}
+
+
+.section-header h2, .section-header2 h2, .section-header3 h2, .section-header4 h2 {
+    font-size: 40px;
     text-align: left;
-    font-size: 25px;
-    padding: 15px;
-    font-family: 'Fjalla One',sans-serif;
+    font-weight: 900;
+    color: #ffffff;
+    
+}
+
+.section-header img, .section-header2 img, .section-header3 img, .section-header4 img {
+    width: 50%;
+    height: max-content;
+}
 
 
+.section-header p, .section-header2 p, .section-header3 p, .section-header4 p {
+    text-align: left;
+    font-size: 16px;
+    padding-top: 30px;
+    margin-bottom: 50px;
+
+}
+
+.section-header div, .section-header2 div, .section-header3 div, .section-header4 div {
+    padding: 80px;
+
+}
+
+section .boton-info {
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    font-weight: 900;
+    padding: 10px 20px;
+}
+
+section .boton-info2 {
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    font-weight: 900;
+    padding: 10px 20px;
+    margin-left: 30px;
 }
 
 
@@ -178,21 +242,20 @@ section img{
 
 /* ---------MENU COMBOS------------- */
 .menu-combos {
-    background-color: #53bdeb;
     margin: 100px;
-    padding: 10px 5px ; 
     text-align: center;
     border-radius: 30px;
 }
 
 .menu-combos .titulo-menu-combos{
-    color: #ffd279;
     font-size: 50px;
     font-weight: 900;
+    margin-bottom: 20px;
 }
 
 .menu-combos .descripcion-menu-combos {
     color: white;
+    font-size: 16px;
 }
 
 
