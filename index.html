@@ -7,89 +7,112 @@
     <meta name="author" content="Santiago Cellitti">
     <meta name="description" content="Empresa de telefonia movil que presenta una tecnologia innovadora que se diferencia de las demas compañias, presentando señal sateliteal directo a tu dispositivo sin importar la zona en la que estes.">
     <meta name="keywords" content="señal satelital, telefonia movil, movil, datos">
-    <link rel="icon" href="./ico/negro-verde.ico" >
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="./ico/negro-verde.ico">
+    <!-- normalize -->
     <link rel="stylesheet" href="css/normalize.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+    <!-- aos animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>Overloaded Signal</title>
+    <!-- reponsive -->
+    <link rel="stylesheet" href="./css/responsive.css">
+    <title>Up Signal</title>
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <img class="img-logo" src="img/negro-verde.png" alt="logo de la empresa">
-            <a href="#"><h2 class="nombre-empresa">OVERLOADEDSIGNAL</h2></a>
-        </div>
-        <nav class="navegacion">
-            <ul class="header-list">
-                <li class="navlist"><a href="index.html" class="navlink">INICIO</a></li>
-                <li class="navlist"><a href="pages/planes-prepago.html" class="navlink">PLANES PREPAGO</a></li>
-                <li class="navlist"><a href="pages/planes-factura.html" class="navlink">PLANES POSPAGO</a></li>
-                <li class="navlist"><a href="pages/os-club.html" class="navlink">OS CLUB</a></li>
-                <li class="navlist"><a href="pages/ayuda.html" class="navlink">AYUDA</a></li>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">US</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/planes-prepago.html">PLANES PREPAGO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/planes-factura.html">PLANES POSPAGO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/us-club.html">US CLUB</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/ayuda.html">AYUDA</a>
+              </li>
             </ul>
-        </nav>
-        <a id="user" href="#" class="user-link"><img class="user" src="img/kisspng-computer-icons-user-membership-vector-5b498fc79b8393.689490051531547591637.png" alt="user"></a>
+          </div>
+        </div>
+      </nav>
     </header>
     <main class="main0">
-         <h1 data-aos="fade-up"
-         data-aos-anchor-placement="center-bottom" class="descripcion" data-aos="zoom-in">OVERLOADEDSIGNAL</h1>
+        <h1 class="descripcion">UP SIGNAL</h1>
         <div>
-            <p class="parrafo" data-aos="zoom-in-up">Nuestra empresa lanzó este proyecto a mediados del 2016, que tenia como objetivo brindar Internet, datos, llamadas y mensajes mediante señal satelital, de esta manera se eliminarían las "zonas muertas" de poca recepción o nula conectividad. Esto quiere decir que podrias estar en cualquier lugar del mundo sin preocuparte ya que la señal viajaría desde nuestros satelites hacia la eSim de tu dispositivo móvil, a diferencia de las demas empresas que dependen de la cantidad de antenas que haya en la zona y la distancia a la que te encuentres de ellas.</p>
+            <p class="parrafo">Up Signal ofrece servicio de alta velocidad y baja latencia en cualquier parte del mundo. Disfruta de la quinta generacion de internet satelital con planes y precios accesibles. </p>
         </div>
-    </main>
+    </main> 
     <section class="section-header">
         <img src="img/satelites-planeta.png" alt="satelites">
         <div>
-            <h2 class="descripcion" data-aos="fade-left">SEÑAL DE ALTA VELOCIDAD DONDE SEA QUE ESTES</h2>
-            <p class="parrafo" data-aos="fade-left">Actualmente contamos con mas de 1.900 satelites en órbita alrededor del mundo, con esto se logra la alta velocidad de internet de baja latencia, conexion a nivel global al alcance de cualquiera y su alta fiabilidad sin microcortes. Aunque tenemos planeado enviar mas satelites a mas regiones para establecer una mejor conexión entre los servidores y los clientes.</p>
-            <a href="#" class="boton-info" data-aos="fade-up-left">MAS INFORMACION</a>
+          <h2 class="descripcion">SEÑAL DE ALTA VELOCIDAD DONDE SEA QUE ESTES</h2>
+          <p class="parrafo">Actualmente contamos con mas de 1.900 satelites en órbita alrededor del mundo, con esto se logra la alta velocidad de internet de baja latencia, conexion a nivel global al alcance de cualquiera y su alta fiabilidad sin microcortes.</p>
+          <a href="#" class="boton-info">MAS INFORMACION</a>
         </div>
     </section>
     <section class="section-header2">
-        <div>    
-            <h2 class="descripcion" data-aos="fade-right">SERVICIO TÉCNICO LAS 24 HORAS DEL DÍA</h2>
-            <p class="parrafo" data-aos="fade-right">Contamos con atención 24/7 por cualquier duda o inconveniente que presente, nuestros empleados estarán a la espera para poder ayudarte a solucionar todos tus problemas.</p>
-            <a href="#" class="boton-info" data-aos="fade-up-right">SOPORTE</a>
-        </div>
-        <img src="img/telemarketer-m.png" alt="servicio tecnico">
+          <div>    
+            <h2 class="descripcion">SERVICIO TÉCNICO LAS 24 HORAS DEL DÍA</h2>
+            <p class="parrafo">Contamos con atención 24/7 por cualquier duda o inconveniente que presente, nuestros empleados estarán a la espera para poder ayudarte a solucionar todos tus problemas.</p>
+            <a href="#" class="boton-info">SOPORTE</a>
+          </div>
+          <img src="img/telemarketer-m.png" alt="servicio tecnico">
     </section>
     <section class="section-header3">
         <img src="img/movil.jpg" alt="satelites">
         <div>
-            <h2 class="descripcion" data-aos="fade-left">ADMINISTRA TU PLAN DESDE NUESTRA APLICACIÓN</h2>
-            <p class="parrafo" data-aos="fade-left">Recomendamos que instales nuestra aplicación móvil para que puedas obtener una mejor experiencia con nuestro servicio.</p>
-            <a href="#" class="boton-info" data-aos="fade-up-left">APP STORE</a>
-            <a href="#" class="boton-info2" data-aos="fade-up-left">PLAY STORE</a>
+            <h2 class="descripcion">ADMINISTRA TU PLAN DESDE NUESTRA APLICACIÓN</h2>
+            <p class="parrafo">Recomendamos que instales nuestra aplicación móvil para que puedas obtener una mejor experiencia con nuestro servicio.</p>
+            <a href="#" class="boton-info">APP STORE</a>
+            <a href="#" class="boton-info2">PLAY STORE</a>
         </div>
     </section>
     <section class="section-header4">
-        <div>    
-            <h2 class="descripcion" data-aos="fade-right">PRUEBA NUESTRO SERVICIO ANTES DE CONTRATAR</h2>
-            <p class="parrafo" data-aos="fade-right">Puedes comunicarte con nuestro soporte para que podamos brindarte una prueba gratuita de 3 días.</p>
-            <a href="#" class="boton-info" data-aos="fade-up-right">COMIENZA TU PRUEBA</a>
-        </div>
-        <img src="img/prueba.jpg" alt="servicio tecnico">
+          <div>
+            <h2 class="descripcion">PRUEBA NUESTRO SERVICIO ANTES DE CONTRATAR</h2>
+            <p class="parrafo">Puedes comunicarte con nuestro soporte para que podamos brindarte una prueba gratuita de 3 días.</p>
+            <a href="#" class="boton-info">COMIENZA TU PRUEBA</a>
+          </div>
+          <img src="img/prueba.jpg" alt="servicio tecnico">
     </section>
     <footer class="footer">
         <div class="empresa-footer">
-            <h4>Overloaded Signal 2022</h4>
+            <h4>Up Signal © 2022</h4>
         </div>
         <div class="terminos-footer">
             <ul class="footer-lista"> <!-- links no redireccionables -->
-                <li class="item-lista"><a href="#">Avisos legales | </a></li>
-                <li class="item-lista"><a href="#">Terminos y condiciones | </a></li>
-                <li class="item-lista"><a href="#">Centro de privacidad | </a></li>
-                <li class="item-lista"><a href="#">Trabaja con nosotros | </a></li>
+                <li class="item-lista"><a href="#">Avisos legales</a></li>
+                <li class="item-lista"><a href="#">Terminos y condiciones</a></li>
+                <li class="item-lista"><a href="#">Centro de privacidad</a></li>
+                <li class="item-lista"><a href="#">Trabaja con nosotros</a></li>
                 <li class="item-lista"><a href="#">Todos los derechos reservados para Cellitti Santiago © 2022</a></li>
             </ul>
         </div>
     </footer>
+    <!-- aos animation -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    <!-- boostrap javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>

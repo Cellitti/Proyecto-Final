@@ -7,31 +7,52 @@
     <meta name="author" content="Santiago Cellitti">
     <meta name="description" content="Empresa de telefonia movil que presenta una tecnologia innovadora que se diferencia de las demas compañias, presentando señal sateliteal directo a tu dispositivo sin importar la zona en la que estes.">
     <meta name="keywords" content="señal satelital, telefonia movil, movil, datos">
-    <link rel="icon" href="../ico/negro-verde.ico" >
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../ico/negro-verde.ico">
+    <!-- normalize -->
     <link rel="stylesheet" href="../css/normalize.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- styles -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+    <!-- aos animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>Planes Prepago | Overloaded Signal</title>
+    <!-- responsive -->
+    <link rel="stylesheet" href="../css/responsive.css">
+    <title>Planes Prepago | Up Signal</title>
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-            <img class="img-logo" src="../img/negro-verde.png" alt="logo de la empresa">
-            <a href="#"><h2 class="nombre-empresa">OVERLOADEDSIGNAL</h2></a>
-        </div>
-        <nav class="navegacion">
-            <ul class="header-list">
-                <li class="navlist"><a href="../index.html" class="navlink">INICIO</a></li>
-                <li class="navlist"><a href="planes-prepago.html" class="navlink">PLANES PREPAGO</a></li>
-                <li class="navlist"><a href="planes-factura.html" class="navlink">PLANES POSPAGO</a></li>
-                <li class="navlist"><a href="os-club.html" class="navlink">OS CLUB</a></li>
-                <li class="navlist"><a href="ayuda.html" class="navlink">AYUDA</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">US</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html">INICIO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="./planes-prepago.html">PLANES PREPAGO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./planes-factura.html">PLANES POSPAGO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./us-club.html">US CLUB</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./ayuda.html">AYUDA</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
-        <a href="#" class="user-link"><img class="user" src="../img/kisspng-computer-icons-user-membership-vector-5b498fc79b8393.689490051531547591637.png" alt="user"></a>
     </header>
     <div class="menu-combos">
         <h2 class="titulo-menu-combos">¡ELEGÍ EL COMBO QUE MÁS TE GUSTE!</h2>
@@ -39,101 +60,179 @@
         <p class="descripcion-menu-combos">Todos los combos son x 30 dias, y con la compra de cualquiera tenes WhatsApp gratis!</p>
     </div>
     <div class="combos">
-        <div class="combo">
-            <h3 class="titulo-combo">BRONCE</h3>
-            <p class="precio-combo">$899</p>
-            <ul class="lista-combo">
-                <li class="item-lista-combo"><span class="span-lista">10 Gigas</span> para que navegues por internet</li>
-                <li class="item-lista-combo"><span class="span-lista">200 Minutos</span> para llamadas a cualquier compañia</li>
-                <li class="item-lista-combo"><span class="span-lista">200 Mensajes</span> para cualquier compañia</li>
-            </ul>
-            <button class="boton">COMPRAR</button>
+        <div class="combo combo1">
+            <div class="contenedor-titulo">
+                <h3 class="titulo-combo">BRONCE</h3>
+            </div>
+            <div class="contenedor-apps">
+                <img src="../img/spotify.png" alt="Spotify">
+                <img src="../img/tiktok.png" alt="TikTok">
+                <img src="../img/whatsapp2.png" alt="WhatsApp">
+            </div>
+            <div class="contenedor-lista">
+                <ul class="lista-combo">
+                    <li class="item-lista-combo">10 Gigas</li>
+                    <li class="item-lista-combo">200 Minutos</li>
+                    <li class="item-lista-combo">200 SMS</li>
+                </ul>
+            </div>
+            <div class="contenedor-precio">
+                <p class="precio-combo">$900</p>
+            </div>
+            <div class="contenedor-boton">
+                <button class="boton">COMPRAR</button>
+            </div>
         </div>
-        <div class="combo">
-            <h3 class="titulo-combo">PLATA</h3>
-            <p class="precio-combo">$1.199</p>
-            <ul class="lista-combo">
-                <li class="item-lista-combo"><span class="span-lista">15 Gigas</span> para que navegues por internet</li>
-                <li class="item-lista-combo"><span class="span-lista">300 Minutos</span> para llamadas a cualquier compañia</li>
-                <li class="item-lista-combo"><span class="span-lista">300 Mensajes</span> para cualquier compañia</li>
-            </ul>
-            <button class="boton">COMPRAR</button>
+        <div class="combo combo2">
+            <div class="contenedor-titulo2">
+                <h3 class="titulo-combo2">PLATA</h3>
+            </div>
+            <div class="contenedor-apps">
+                <img src="../img/spotify.png" alt="Spotify">
+                <img src="../img/tiktok.png" alt="TikTok">
+                <img src="../img/whatsapp2.png" alt="WhatsApp">
+            </div>
+            <div class="contenedor-lista">
+                <ul class="lista-combo">
+                    <li class="item-lista-combo">15 Gigas</li>
+                    <li class="item-lista-combo">300 Minutos</li>
+                    <li class="item-lista-combo">300 SMS</li>
+                </ul>
+            </div>
+            <div class="contenedor-precio">
+                <p class="precio-combo">$1.200</p>
+            </div>
+            <div class="contenedor-boton">
+                <button class="boton">COMPRAR</button>
+            </div>
         </div>
-        <div class="combo">
-            <h3 class="titulo-combo">ORO</h3>
-            <p class="precio-combo">$1.499</p>
-            <ul class="lista-combo">
-                <li class="item-lista-combo"><span class="span-lista">20 Gigas</span> para que navegues por internet</li>
-                <li class="item-lista-combo"><span class="span-lista">500 Minutos</span> para llamadas a cualquier compañia</li>
-                <li class="item-lista-combo"><span class="span-lista">500 Mensajes</span> para cualquier compañia</li>
-            </ul>
-            <button class="boton">COMPRAR</button>
+        <div class="combo combo3">
+            <div class="contenedor-titulo3">
+                <h3 class="titulo-combo3">ORO</h3>
+            </div>
+            <div class="contenedor-apps">
+                <img src="../img/spotify.png" alt="Spotify">
+                <img src="../img/tiktok.png" alt="TikTok">
+                <img src="../img/whatsapp2.png" alt="WhatsApp">
+            </div>
+            <div class="contenedor-lista">
+                <ul class="lista-combo">
+                    <li class="item-lista-combo">20 Gigas</li>
+                    <li class="item-lista-combo">500 Minutos</li>
+                    <li class="item-lista-combo">500 SMS</li>
+                </ul>
+            </div>
+            <div class="contenedor-precio">
+                <p class="precio-combo">$1.500</p>
+            </div>
+            <div class="contenedor-boton">
+                <button class="boton">COMPRAR</button>
+            </div>
         </div>
-        <div class="combo">
-            <h3 class="titulo-combo">PLATINO</h3>
-            <p class="precio-combo">$1.999</p>
-            <ul class="lista-combo">
-                <li class="item-lista-combo"><span class="span-lista">50 Gigas</span> para que navegues por internet</li>
-                <li class="item-lista-combo"><span class="span-lista">1000 Minutos</span> para llamadas a cualquier compañia</li>
-                <li class="item-lista-combo"><span class="span-lista">1000 Mensajes</span> para cualquier compañia</li>
-            </ul>
-            <button class="boton">COMPRAR</button>
+        <div class="combo combo4">
+            <div class="contenedor-titulo4">
+                <h3 class="titulo-combo4">PLATINO</h3>
+            </div>
+            <div class="contenedor-apps">
+                <img src="../img/spotify.png" alt="Spotify">
+                <img src="../img/tiktok.png" alt="TikTok">
+                <img src="../img/whatsapp2.png" alt="WhatsApp">
+            </div>
+            <div class="contenedor-lista">
+                <ul class="lista-combo">
+                    <li class="item-lista-combo">50 Gigas</li>
+                    <li class="item-lista-combo">1000 Minutos</li>
+                    <li class="item-lista-combo">1000 SMS</li>
+                </ul>
+            </div>
+            <div class="contenedor-precio">
+                <p class="precio-combo">$2.000</p>
+            </div>
+            <div class="contenedor-boton">
+                <button class="boton">COMPRAR</button>
+            </div>
         </div>
     </div>
     <div class="menu-combos-extra">
         <h2 class="titulo-menu-combos-extra">¿TE QUEDASTE SIN DATOS?</h2>
-        <p class="descripcion-menu-combos-extra">Aca podes elegir unos Combos extras x 7 dias para que nunca te quedes desconectado.</p>
+        <p class="descripcion-menu-combos-extra">Acá podes elegir unos Combos extras x 7 dias para que nunca te quedes desconectado.</p>
     </div>
     <div class="combos-extra">
-        <div class="combo-extra">
-            <h3 class="titulo-combo-extra">1 GIGA</h3>
-            <p class="precio-combo-extra">$199</p>
-            <ul class="lista-combo-extra">
-                <li class="item-lista-combo-extra"><span class="span-lista-extra">1 Gigas</span> para que navegues por internet</li>
-                <li class="item-lista-combo-extra"><span class="span-lista-extra">25 Minutos</span> para llamadas a cualquier compañia</li>
-                <li class="item-lista-combo-extra"><span class="span-lista-extra">25 Mensajes</span> para cualquier compañia</li>
-            </ul>
-            <button class="boton-extras">COMPRAR</button>
+        <div class="combo-extra combo-extra1">
+            <div class="contenedor-titulo-extra">
+                <h3 class="titulo-combo-extra">1 GIGA</h3>
+            </div>
+            <div class="contenedor-precio-extra">
+                <p class="precio-combo-extra">$200</p>
+            </div>
+            <div class="contenedor-lista-extra">
+                <ul class="lista-combo-extra">
+                    <li class="item-lista-combo-extra">1 Giga</li>
+                    <li class="item-lista-combo-extra">25 Minutos</li>
+                    <li class="item-lista-combo-extra">25 Mensajes</li>
+                </ul>
+            </div>
+            <div class="contenedor-boton-extra">
+                <button class="boton-extras">COMPRAR</button>
+            </div>
         </div>
-        <div class="combo-extra">
-            <h3 class="titulo-combo-extra">3 GIGAS</h3>
-            <p class="precio-combo-extra">$299</p>
-            <ul class="lista-combo-extra">
-                <li class="item-lista-combo-extra"><span class="span-lista-extra">3 Gigas</span> para que navegues por internet</li>
-                <li class="item-lista-combo-extra"><span class="span-lista-extra">50 Minutos</span> para llamadas a cualquier compañia</li>
-                <li class="item-lista-combo-extra"><span class="span-lista-extra">50 Mensajes</span> para cualquier compañia</li>
-            </ul>
-            <button class="boton-extras">COMPRAR</button>
+        <div class="combo-extra combo-extra2">
+            <div class="contenedor-titulo-extra">
+                <h3 class="titulo-combo-extra">3 GIGAS</h3>
+            </div>
+            <div class="contenedor-precio-extra">
+                <p class="precio-combo-extra">$300</p>
+            </div>
+            <div class="contenedor-lista-extra">
+                <ul class="lista-combo-extra">
+                    <li class="item-lista-combo-extra">3 Gigas</li>
+                    <li class="item-lista-combo-extra">50 Minutos</li>
+                    <li class="item-lista-combo-extra">50 Mensajes</li>
+                </ul>
+            </div>
+            <div class="contenedor-boton-extra">
+                <button class="boton-extras">COMPRAR</button>
+            </div>
         </div>
-        <div class="combo-extra">
-            <h3 class="titulo-combo-extra">5 GIGAS</h3>
-            <p class="precio-combo-extra">$399</p>
-            <ul class="lista-combo-extra">
-                <li class="item-lista-combo-extra"><span class="span-lista-extra">5 Gigas</span> para que navegues por internet</li>
-                <li class="item-lista-combo-extra"><span class="span-lista-extra">100 Minutos</span> para llamadas a cualquier compañia</li>
-                <li class="item-lista-combo-extra"><span class="span-lista-extra">100 Mensajes</span> para cualquier compañia</li>
-            </ul>
-            <button class="boton-extras">COMPRAR</button>
+        <div class="combo-extra combo-extra3">
+            <div class="contenedor-titulo-extra">
+                <h3 class="titulo-combo-extra">5 GIGAS</h3>
+            </div>
+            <div class="contenedor-precio-extra">
+                <p class="precio-combo-extra">$400</p>
+            </div>
+            <div class="contenedor-lista-extra">
+                <ul class="lista-combo-extra">
+                    <li class="item-lista-combo-extra">5 Gigas</li>
+                    <li class="item-lista-combo-extra">100 Minutos</li>
+                    <li class="item-lista-combo-extra">100 Mensajes</li>
+                </ul>
+            </div>
+            <div class="contenedor-boton-extra">
+                <button class="boton-extras">COMPRAR</button>
+            </div>
         </div>
     </div>
-
     <footer id="footer" class="footer">
         <div class="empresa-footer"> 
-            <h4>Overloaded Signal © 2022</h4>
+            <h4>Up Signal © 2022</h4>
         </div>
         <div class="terminos-footer">
             <ul class="footer-lista"> <!-- links no redireccionables -->
-                <li class="item-lista"><a href="#">Avisos legales | </a></li>
-                <li class="item-lista"><a href="#">Terminos y condiciones | </a></li>
-                <li class="item-lista"><a href="#">Centro de privacidad | </a></li>
-                <li class="item-lista"><a href="#">Trabaja con nosotros | </a></li>
+                <li class="item-lista"><a href="#">Avisos legales</a></li>
+                <li class="item-lista"><a href="#">Terminos y condiciones</a></li>
+                <li class="item-lista"><a href="#">Centro de privacidad</a></li>
+                <li class="item-lista"><a href="#">Trabaja con nosotros</a></li>
                 <li class="item-lista"><a href="#">Todos los derechos reservados para Cellitti Santiago © 2022</a></li>
             </ul>
         </div>
     </footer>
+    <!-- aos animation -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    <!-- boostrap javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>

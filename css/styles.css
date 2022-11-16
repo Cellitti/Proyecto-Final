@@ -18,78 +18,12 @@ body p {
     font-family: sans-serif;
 }
 
-/* HEADER */
-
-
-header {
-    display: flex;
-    background-color: #000000;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-}
-
-header .img-logo {
-    height: 100px;
-    margin-right: 10px;
-    margin-left: 10px;
-
-}
-
-header .logo {
-    display: flex;
-    align-items: center;
-}
-
-.nombre-empresa {
-    font-size: 30px;
-    font-weight: 400;
-} 
-
-a {
+body a {
     text-decoration: none;
-    color:white;
+    color: #ffffff;
 }
-
-header .navegacion {
-    text-align: center;
-}
-
-
-.header-list .navlist {
-    list-style: none;
-    display: inline-block;
-}
-
-
-nav a {
-    padding-right: 10px;
-    font-size: 15px;
-    transition: all 0.2s;
-}
-
-nav a:hover {
-    color: #00a884;
-}
-
-.header .user-link {
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-.header .user {
-    width: 50px;
-    height: 50px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    transition: all 0.2s;
-}
-
-.header .user:hover {
-    border: 2px solid #00a884;
-    border-radius: 30px;
-    background-color: #00a884;
-
+body a:hover {
+    color: #ffffff;
 }
 
 /* FOOTER */
@@ -101,30 +35,41 @@ footer .empresa-footer {
 
 footer {
     width: 100%;
-    background-color: #000000;
+    height: 90px;
+    background-color: #212529;
     margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-.footer .empresa-footer h4{
+.empresa-footer h4{
     padding: 10px;
     color: #808080;
+    font-size: 16px;
 }
 
-.terminos-footer .footer-lista  {
+.footer-lista  {
     text-align: center;
-    padding-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 footer div ul li {
     list-style: none;
-    display: inline;
     padding: 0px 5px;
 
 }
 
 .footer-lista a{
-    color: #ffffff;
-    font-style: oblique;
+    color: #4b4b4b;
+}
+
+.footer-lista a:hover {
+    list-style:none ;
+    color: #4b4b4b;
 }
 
 
@@ -135,41 +80,32 @@ footer div ul li {
 .section-header {
     display: flex;
     width: 100%;
-    height: 500px;
+    height: auto;
+    margin-bottom: 100px;
 
-}
-
-.section-header img {
-    justify-content: flex-end;
 }
 
 .section-header2 {
     display: flex;
-    margin-top: 100px;
     width: 100%;
-    height: 500px;
+    height: auto;
+    margin-bottom: 100px;
 
-}
-
-.section-header2 img {
-    align-items: flex-end;
-    margin-right: 0px;
 }
 
 .section-header3 {
     display: flex;
-    margin-top: 100px;
+    margin-bottom: 100px;
     width: 100%;
-    height: 500px;
+    height: auto;
 }
+
 .section-header4 {
     display: flex;
-    margin-top: 100px;
     width: 100%;
-    height: 500px;
+    height: auto;
 
 }
-
 
 .main0 {
     background-image: url(../img/desierto-2.jpg);
@@ -177,14 +113,13 @@ footer div ul li {
     background-size: 100%;
     background-position: 100%;
     height: 800px;
-    margin: 0;
 }
 
 .main0 h1 {
     text-align: center;
-    padding: 60px 0px;
+    padding: 30px 0px;
     font-size: 60px ;
-    margin: 0;
+
 }
 
 .main0 p {
@@ -217,8 +152,8 @@ footer div ul li {
 
 }
 
-.section-header div, .section-header2 div, .section-header3 div, .section-header4 div {
-    padding: 80px;
+.section-header div, .section-header2 div, .section-header3 div, .section-header4 div{
+    padding: 100px;          
 
 }
 
@@ -227,6 +162,7 @@ section .boton-info {
     cursor: pointer;
     font-weight: 900;
     padding: 10px 20px;
+    margin-left: 20px;
 }
 
 section .boton-info2 {
@@ -263,36 +199,62 @@ section .boton-info2 {
 
 .combos {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    height: 400px;
-}
 
+}
 
 .combo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     margin: 20px;
     text-align: center;
-    border-top-right-radius: 135px;
-    border-bottom-left-radius: 135px;
-    background-color: #2a3942;
-    height: 450px;
-    width: 400px;
-    border: 8px #00a884 solid;
-    border-style: ridge;
-
-
+    background-color: #000000;
+    width: 80%;
+    border: 1px #3f3f3f solid;
+    border-radius: 10px;
+    transition: all 0.2s;
 }
 
-.titulo-combo {
-    border: 0;
-    text-align: left;
-    margin-left: 0px;
-    font-weight: 900;
-    padding: 8px;
+.combo:hover {
+    box-shadow: #3d3d3d 1px 1px 35px 1px;
+}
+
+.contenedor-titulo, .contenedor-titulo2, .contenedor-titulo3, .contenedor-titulo4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f1f1f;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    align-items: center;
+    height: 250px;
+}
+
+.titulo-combo, .titulo-combo2 , .titulo-combo3, .titulo-combo4 { 
     font-size: 50px;
     letter-spacing: 2px;
-    color: #ffd279;
+}
 
+.contenedor-apps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.contenedor-apps img {
+    padding: 10px;
+    width: 180px;
+    height: max-content;    
+}
+
+.contenedor-precio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .precio-combo {
@@ -301,9 +263,12 @@ section .boton-info2 {
     font-size: 40px;
     font-weight: 900;
     padding: 10px;
-    background-color: #53bdeb;
+}
 
-
+.contenedor-lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .lista-combo {
@@ -327,92 +292,162 @@ section .boton-info2 {
     height: 15px;
     margin-right: 10px;
     display: inline-block;
-    background-image: url(../img/pngwing.com.png);
+    background-image: url(../img/check.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.span-lista {
-    color: #ffd279;
-    font-weight: 700;
+.contenedor-boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .boton {
-    background-color: #ffffff;
-    color: #00a884;
-    border-radius: 15px;
-    padding: 10px 20px;
-    margin-top: 30px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 10px 20px; 
     font-size: 20px;
     font-weight:900;
     border: 0;
     transition: all 0.2s;
+    cursor: pointer;
     
 }
 
 .boton:hover{
-    background-color: #00a884;
-    color: white;
-    border-radius: 30px;
+    border-radius: 8px;
+    transform: scale(1.1);
 
 }
 
+/* ---COLORES--- */
+
+/* --COMBO 1-- */
+
+.combo1 {
+    background-color: #53bdeb;
+}
+
+.titulo-combo {
+    color: #53bdeb;
+}
+
+.combo1 .boton:hover {
+    background-color: #ffffff;
+    color: #53bdeb; 
+}
+
+/* --COMBO 2-- */
+
+.combo2 {
+    background-color: #ff0066;
+}
+
+.titulo-combo2 {
+    color: #ff0066;
+}
+
+.combo2 .boton:hover {
+    background-color: #ffffff;
+    color: #ff0066; 
+}
+
+/* --COMBO 3-- */
+
+.combo3 {
+    background-color: #919103;
+}
+
+.titulo-combo3 {
+    color: #919103c2;
+}
+
+.combo3 .boton:hover {
+    background-color: #ffffff;
+    color: #919103; 
+}
+
+/* --COMBO 4-- */
+
+.combo4 {
+    background-color: #587cf5;
+}
+
+.titulo-combo4 {
+    color: #587cf5;
+}
+
+.combo4 .boton:hover {
+    background-color: #ffffff;
+    color: #587cf5;
+}
 
 /* ---------MENU COMBOS EXTRA------------- */
 .menu-combos-extra {
-    background-color: #53bdeb;
-    margin: 100px;
-    margin-top: 200px;
+    margin: 50px;
     padding: 10px 5px;
     text-align: center;
     border-radius: 30px;
 }
 
 .titulo-menu-combos-extra{
-    color: #ffd279;
     font-size: 50px;
     font-weight: 900;
+    padding: 20px;
 
 }
 
 .descripcion-menu-combos-extra {
-    color: white;
+    font-size: 16px;
 }
 
 /* --------- COMBOS EXTRA --------*/
 
 .combos-extra{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     width: 100%;
-    justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .combo-extra {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 1fr 1fr 1fr 1fr;
     margin: 30px;
     text-align: center;
-    border-top-right-radius: 135px;
-    border-bottom-left-radius: 135px;
-    height: 450px;
-    width: 350px;
-    background-color: #2a3942;
-    border: 8px #00a884 solid;
-    border-style: ridge;
+    border-radius: 4px;
+    background-color: #292929c2;
+    border: 1px #3f3f3f solid;
+    transition: all 0.2s;
+}
+
+.combo-extra:hover {
+    background-color: #212529;
+    box-shadow: #3d3d3d 1px 1px 35px 1px;
+}
+
+.contenedor-titulo-extra {
+    width: 100%;
 }
 
 .titulo-combo-extra {
-    border: 0;
     padding: 8px;
     padding-left: 15px;
     font-size: 50px;
     font-weight: 900;
-    text-align: left; 
-    color: #ffd279;
+    text-align: center; 
+}
+
+.contenedor-precio-extra {
+    width: 100%;
 }
 
 .precio-combo-extra {
-    border-top-right-radius: 70px;
-    border-bottom-right-radius: 1px;
     font-size: 40px;
     font-weight: 900;
     padding: 10px;
@@ -421,17 +456,18 @@ section .boton-info2 {
 
 }
 
+.contenedor-lista-extra {
+    width: 100%;
+}
+
 .lista-combo-extra {
     padding: 5px;
 }
-
-
 
 .item-lista-combo-extra {
     list-style: none;
     padding-left: 15px;
     list-style-position: inside;
-    text-align: left;
     padding-bottom: 20px;
     font-weight: 500;
 }
@@ -442,41 +478,35 @@ section .boton-info2 {
     height: 15px;
     margin-right: 10px;
     display: inline-block;
-    background-image: url(../img/pngwing.com.png);
+    background-image: url(../img/check.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.span-lista-extra {
-    color: #ffd279;
-    font-weight: 700;
+.contenedor-boton-extra {
+    width: 100%;
 }
 
 .boton-extras {
-    background-color: white;
-    color: #00a884;
-    border-radius: 15px;
+    background-color: #3f3f3f;
+    color: #ffffff;
+    border-radius: 4px;
     padding: 10px 20px;
-    margin-top: 30px;
+    margin: 30px;
     font-size: 20px;
     font-weight: 900;
-    border: 0;
+    cursor: pointer;
     transition: all 0.2s;
+    border: 0;
     
 }
 
 .boton-extras:hover{
-    background-color: #00a884;
+    background-color: #3f3f3f;
     color: white;
-    border-radius: 30px;
 
 }
-
-
-
-
-
 
 
 /* --------------------------------------------------planes factura-------------------------------------------- */
@@ -484,71 +514,112 @@ section .boton-info2 {
 /* ----------MENU COMBOS POSPAGO---------- */
 
 .menu-combos-pospago {
-    background-color: #53bdeb;
     border-radius: 30px;
-    margin: 100px;
+    margin: 50px; 
     text-align: center;
     padding: 10px 5px;
 }
 
 .titulo-menu-combos-pospago {
-    color: #ffd279;
     font-size: 50px;
     font-weight: 900;
 }
-
-
 
 .descripcion-menu-combos-pospago {
     color: #ffffff;
 }
 
 .link-parrafo {
-    text-decoration: underline;
-    color: #ffd279;
-    font-weight: 500;
+    font-weight: 900;
 }
 
+/* 2 */
+
+.menu-combos-pospago2 {
+    text-align: center;
+}
+
+.descripcion-menu-combos-pospago2 {
+    color: #ffffff;
+}
+
+.link-parrafo2 {
+    font-weight: 900;
+    text-decoration: underline;
+}
 
 /* -----------COMBOS------------- */
 
 .combos-pospago {
-    display: flex;
+    display: grid;
+    grid-row: auto;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
-    height: 400px;
     justify-content: space-between;
 }
 
 .combo-pospago {
-    border: 8px #00a884 solid;
-    border-style: ridge;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: auto;
+    border: 1px #3f3f3f solid;
     margin: 20px;
     text-align: center;
-    border-radius: 15px;
-    background-color: #2a3942;
-    width: 400px;
-    height: 450px;
-    border-bottom-right-radius: 135px;
-    border-top-left-radius: 135px;
+    border-radius: 4px;
+    background-color: #eeeeeec2;
+    transition: all 0.2s;
 }
 
+.combo-pospago:hover {
+    scale: 1.015;
+    box-shadow: #3f3f3f 1px 1px 10px 1px;
+    background-color: #eeeeee;
+}
+
+.contenedor-titulo-pospago {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
 
 .titulo-combo-pospago{
-    padding: 20px;
+    border-radius: 4px;
+    margin: 20px 15px;
     font-size: 50px;
     text-align: center;
-    padding-right: 20px;
-    color: #ffd279;
+    background-color: #eeeeee;
     font-weight: 900;
+}
+
+.contenedor-precio-pospago {
+    background-color: #000000;
 }
 
 .precio-combo-pospago {
+    display: inline-block;
     border-top-left-radius: 125px;
     border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 125px;
+    border-top-right-radius: 16px;
     font-size: 40px;
     font-weight: 900;
-    padding: 10px;
-    background-color: #53bdeb;
+    padding: 10px 20px;
+    background-color: #212529;
+}
+
+.contenedor-logos-app {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+
+.contenedor-logos-app img {
+    width: 50px;
+}
+
+.contenedor-logos-app .img2, .contenedor-logos-app .img3 {
+    width: 58px;
 }
 
 .lista-combo-pospago {
@@ -561,7 +632,7 @@ section .boton-info2 {
     padding-bottom: 20px;
     list-style-position: inside;
     text-align: left;
-    color: #ffffff;
+    color: #292929;
     font-weight: 500;
 }
 
@@ -578,16 +649,22 @@ section .boton-info2 {
 }
 
 .span-lista-pospago {
-    color: #ffd279;
+    color: #000000;
     font-weight: 700;
 }
 
+.contenedor-boton-pospago {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .boton-pospago {
-    background-color: white;
-    color: #00a884;
-    border-radius: 15px;
+    background-color: #212529c2;
+    color: #ffffff;
+    border-radius: 4px;
     padding: 10px 20px;
-    margin-top: 30px;
+    margin-bottom: 10px;
     font-size: 20px;
     font-weight: 900;
     border: 0;
@@ -595,73 +672,113 @@ section .boton-info2 {
     
 }
 
-.boton-pospago:hover{
-    background-color: #00a884;
-    color: white;
-    border-radius: 30px;
+.boton-pospago:hover{   
+    border-radius: 4px;
+    background-color: #212529;
+
 
 }
 
+/* ----COLORS---- */
+
+/* COMBO BASICO */
+
+.combo-pospago1 .contenedor-titulo-pospago, .combo-pospago .contenedor-precio-pospago {
+    background-color: #d71e1b;
+}
+
+.combo-pospago1 .titulo-combo-pospago {
+    color: #d71e1b;
+}
+
+/* COMBO PROFESIONAL */
+
+.combo-pospago2 .contenedor-titulo-pospago, .combo-pospago2 .contenedor-precio-pospago {
+    background-color: #2ba99d;
+}
+
+.combo-pospago2 .titulo-combo-pospago {
+    color: #2ba99d;
+}
+
+/* COMBO EMPRESARIAL */
+
+.combo-pospago3 .contenedor-titulo-pospago, .combo-pospago3 .contenedor-precio-pospago {
+    background-color: #bea042;
+}
+
+.combo-pospago3 .titulo-combo-pospago {
+    color: #bea042;
+}
 
 /* --------------------------------------------------os club---------------------------------------------------*/
 
 .inicio-osclub {
     text-align: center;
-    background-color: #53bdeb;
     margin: 25px 30px;
-    border-radius: 30px;
-
 }
 
 .titulo-osclub {
     font-size: 80px;;
     padding-top: 5px;
-    color: #ffd279;
-
 }
 
 .parrafo-osclub {
     font-size: 20px;
     padding-bottom: 10px;
-    color: #ffffff;
 }
 
 .inicio-osclub2 {
     text-align: center;
-    background-color: #53bdeb;
     margin: 25px 30px;
-    border-radius: 30px;
+    margin-top: 150px;
 }
 
 .titulo-osclub2 {
-    color: #ffd279;
     font-size: 60px;
     padding-top: 10px;
 }
 
-.parrafo-osclub2 {
-    color: #ffffff;
-    padding-bottom: 10px;
-    font-size: 20px;
+.pasos {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    margin-top: 50px;
 }
 
-
-
-
-
-.imgs-descuento {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    
+.img-paso {
+    width: 100px;
 }
 
-.imgs-descuento .img-descuento {
-    width: 400px;
-    height: 350px;
-    margin: 0px 15px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+.paso {
+    display: flex;
+    flex-direction: column;
+}
+
+.numero {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.contenedor-paso {
+    margin: 20px;
+}
+
+.crear-usuario {
+    grid-column: 1/4;
+}
+
+.boton-cu {
+    background-color: #bb0000c2;
+    font-weight: 900;
+    color: #1f1f1f;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 4px;
+}
+
+.boton-cu:hover {
+    background-color: #bb0000;
 }
 
 

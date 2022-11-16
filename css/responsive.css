@@ -1,0 +1,86 @@
+/* -----------------index---------------------- */
+
+@media (max-width:576px) {
+    /* footer */
+
+    footer {
+        height: max-content ;  
+    }
+    
+    .footer-lista {
+        text-align: center;
+    }
+    
+    /* main */
+    .main0 {
+       background-image: url(../img/antena.jpg);
+       width: 100%;
+       height: 570px;
+       background-size: cover;
+    }
+
+    .main0 h1 {
+        font-size: 30px;
+        margin: 0;
+    }
+
+    .main0 div {
+        width: 100%;
+        padding: 0 20px;
+    } 
+
+    .main0 p {
+        text-align: center;
+        padding: 20px;
+    } 
+
+
+
+    /* sections */
+    .section-header, .section-header3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .section-header2, .section-header4 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        height: auto;
+
+    }
+
+    .section-header img, .section-header2 img, .section-header3 img, .section-header4 img {
+        width: 100%;
+    }
+
+    .section-header div, .section-header2 div, .section-header3 div, .section-header4 div {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .section-header div h2, .section-header2 div h2, .section-header3 div h2, .section-header4 div h2 {
+        font-size: 15px;
+        padding: 20px;
+    }
+
+    .section-header div p, .section-header2 div p, .section-header3 div p, .section-header4 div p {
+        font-size: 15px;
+        padding: 20px;
+    }
+
+    .boton.info, .boton.info2 {
+        justify-content: center;
+        align-items: center;
+    } 
+
+    /* -----------------------planes-prepago-------------------- */
+
+    .menu-combos .titulo-menu-combos {
+        font-size: 30px;
+    }
+
+ 
+}
