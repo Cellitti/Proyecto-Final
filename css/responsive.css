@@ -16,6 +16,7 @@
        background-image: url(../img/antena.jpg);
        width: 100%;
        height: 570px;
+       margin-bottom: 150px;
        background-size: cover;
     }
 
@@ -37,6 +38,11 @@
 
 
     /* sections */
+
+    .section-header {
+        margin-top: 150px;
+    }
+
     .section-header, .section-header3 {
         display: flex;
         flex-direction: column;
@@ -72,6 +78,7 @@
     }
 
     .boton.info, .boton.info2 {
+        font-size: 20px;
         justify-content: center;
         align-items: center;
     } 
@@ -82,5 +89,69 @@
         font-size: 30px;
     }
 
- 
+    /* ----------------------------planes-pospago-------------- */
+
+    .titulo-menu-combos {
+        font-size: 30px;
+        padding: 0;
+    }
+
+
+    /* --------------------------------us-club------------------ */
+
+    .titulo-osclub {
+        font-size: 30px;
+    }
+
+    .img-carrousel {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .titulo-osclub2 {
+        font-size: 30px;
+    }
+
+    .pasos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* -----------------------------ayuda------------------------ */
+
+    .contenedor-info-form {
+        margin-top: 70px;
+    }
+
+    .contenedor-titulo-contacto h2 {
+        font-size: 30px;
+    }
+
+    .contenedor-parrafo-contacto {
+        padding: 0px 20px;
+    }
+
+    form, .name-complete, .date-contact, .user-region {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+
+    .area-submit {
+        display: flex;
+        justify-content: center;
+    }
+
+    .newsletter {
+        width: 100%;
+    }
+
+    .newsletter p {
+        padding: 0 20px;
+    }
+
+    .suscripcion {
+        justify-content: center;
+    }
 }

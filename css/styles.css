@@ -781,131 +781,130 @@ section .boton-info2 {
     background-color: #bb0000;
 }
 
+.img-carrousel {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+
 
 /* -----------------------------------ayuda---------------------------------------------------------------------- */
 
-.titulo-preguntas-frecuentes {
+.contenedor-info-form {
+    margin-top: 70px;
+    width: auto;
+    height: auto;
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 20px;
-    font-size: 75px;
-    color: #ffd279;
 }
 
-.categorias {
-    display: inline;
-    text-align: center;
-}  
-
-.nav-pf {
-    background-color: #53bdeb;
-    border-radius: 10px;
-    padding: 20px 10px;
-    width: 600px;
-    margin: 0 auto;
-    margin-bottom: 20px;
+.contenedor-form-contacto {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.navlink-pf {
-    font-size: 15px;
-    padding: 15px;
+.contenedor-titulo-contacto h2 {
+    font-size: 60px;
     font-weight: 900;
-    color: #ffffff;
-    letter-spacing: 2px;
 }
 
-.navlink-pf:hover {
-    color: #00a884;
-    font-size: 15px;
-    text-shadow: #000000 1px 1px 10px;
-
+form {
+    width: auto;
+    height: 300px;
+    margin-top: 100px;
+    margin-bottom: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: grid;
+    row-gap: 10px;
+    grid-template-columns: 1fr ;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr;
 }
 
-.categoria {
-    margin: 10px auto;
-    margin-bottom: 25px;
-    text-align: center;
-    background-color: #2a3942;
-    width: 800px;
+.name-complete {
+    width: auto;
+    display: flex;
+    justify-content: left;
+    column-gap: 10px;
+}
+
+.date-contact, .user-region {
+    width: auto;
+    display: flex;
+    justify-content:left;
+    column-gap: 10px;
+} 
+
+.input-form {
+    border: 1px #7a7a7a solid;
+    border-radius: 4px;
+    height: 60px;
+    width: 390px;
+    background-color: #1f1f1f;
+}
+
+.query {
+    width: 100%;
+    transition: all 0.2s;
+}
+
+.query:focus {
     height: 200px;
-    border-radius: 30px;
 }
 
-.titulo-categoria {
-    color: #ffd279;
-    font-size: 20px;
-    padding-top: 15px;
+.boton-form {
+    height: 60px;
+    width: 290px;
+    background-color: #ececec;
+    border-radius: 4px;
+    transition: all 0.2s;
+    cursor: pointer;
 }
 
-.lista-desc {
-    text-align: left;
-}
-
-.termino {
-    font-weight: 900;
-    font-size: 20px;
-    padding-left: 30px;
-    letter-spacing: 1px;
-}
-
-.definicion {
-    padding-left: 55px ;
-}
-
-.parrafo-form {
-    margin: 30px auto;
-    width: 700px;
-    height: 130px;
-    padding: 15px;
-    text-align: center;
-    border-radius: 30px;
-    background-color: #53bdeb;
-    color: #ffd279;
-    font-size: 20px;
-    font-weight: 900;
-}
-
-.formulario {
-    background-color: #00a884;
-    border-radius: 30px;
-    margin: 20px auto;
-    height: 350px;
-    width: 400px;
-}
-
-.label {
-    font-size: 20px;
+.boton-form:hover {
+    border: 1px solid #ffffff;
+    background-color: #000000;
     color: #ffffff;
-    display: block;
-    padding-left: 20px;
-    padding-top: 20px;
 }
 
-input {
-    display: block;
+.newsletter {
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.input-nombre {
-    border-radius: 50px;
-    margin-left: 20px;
+.newsletter p {
+    text-align: center;
 }
 
-.input-mail {
-    border-radius: 50px;
-    margin-left: 20px;
+.suscripcion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.input-comentario {
-    border-radius: 0px;
-    margin-left: 20px;
-    height: 100px;
-    width: 300px;
+.boton-suscripcion {
+    height: 60px;
+    width: 290px;
+    background-color: #ececec;
+    border-radius: 4px;
+    transition: all 0.2s;
+    cursor: pointer;
 }
 
-.input-sumbit {
-    height: 30px;
-    width: 100px;
-    margin: 0 auto;
-    margin-top: 25px;
 
+.boton-suscripcion:hover {
+    border: 1px solid #ffffff;
+    background-color: #000000;
+    color: #ffffff;
 }
