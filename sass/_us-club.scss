@@ -1,0 +1,99 @@
+.inicio-osclub {
+    margin: 70px 0 100px;
+    width: auto;
+    height: auto;
+    padding: 40px;
+    background-color: #000000af;
+    border-top: 1px #1f1f1f solid;
+    border-bottom: 1px #1f1f1f solid;
+
+    .titulo-osclub {
+        text-align: center;
+        font-size: 4rem;
+        font-weight: 900;
+        padding-top: 5px;
+    }
+
+    .parrafo-osclub {
+        text-align: center;
+        font-size: 1rem;
+        padding-bottom: 10px;
+    }
+}
+
+.img-carrousel {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.inicio-osclub2 {
+    margin: 150px 0 70px;
+    width: auto;
+    height: auto;
+    padding: 40px;
+    background-color: #000000af;
+    border-top: 1px #1f1f1f solid;
+    border-bottom: 1px #1f1f1f solid;
+
+    .titulo-osclub2 {
+        font-size: 4rem;
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+.pasos {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    margin: 30px 0;
+
+    .paso {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .contenedor-img-paso {
+            .img-paso {
+                width: 100px;
+            }
+        }
+
+        .contenedor-numero {
+            .numero {
+                font-size: 2rem;
+                margin-top: 20px;
+                text-align: center;
+            }
+        }
+
+        .contenedor-paso {
+            margin: 20px;
+            text-align: center;
+        }
+    }
+
+    .crear-usuario {
+        grid-column: 1/4;
+        margin: 0 auto;
+
+        .boton-cu {
+            background-color: #6c0e0e;
+            color: #ffffff;
+            padding: 10px 15px;
+            border: #000 7px solid;
+            border-radius: 20px;
+            transition: all 0.2s;
+
+            &:hover {
+                background-color: #6c0e0e;
+                scale: 1.080;
+            }
+        }
+    }
+}

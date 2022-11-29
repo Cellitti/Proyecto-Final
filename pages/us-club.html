@@ -1,163 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Santiago Cellitti">
-    <meta name="description" content="Empresa de telefonia movil que presenta una tecnologia innovadora que se diferencia de las demas compañias, presentando señal sateliteal directo a tu dispositivo sin importar la zona en la que estes.">
-    <meta name="keywords" content="señal satelital, telefonia movil, movil, datos">
-    <link rel="icon" href="../ico/negro-verde.ico">
-    <!-- normalize -->
-    <link rel="stylesheet" href="../css/normalize.css">
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!-- styles -->
-    <link rel="stylesheet" href="../css/styles.css">
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
-    <!-- aos animation -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- responsive -->
-    <link rel="stylesheet" href="../css/responsive.css">
-    <title>US Club | Up Signal</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Santiago Cellitti">
+  <meta name="description" content="Conocé todos los beneficios que tenemos para vos contratando cualquier combo.">
+  <meta name="keywords" content="señal satelital, telefonía móvil, móvil, datos, internet, descuentos">
+  <link rel="icon" href="../ico/hotspot.ico">
+  <!-- normalize -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- scss -->
+  <link rel="stylesheet" href="../sass/main.css">
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+  <title>US Club | Up Signal</title>
 </head>
+
 <body>
-  <nav class="navbar navbar-expand-lg bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">US</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg nav-bs">
+    <div class="d-flex justify-content-between container-fluid">
+      <a class="navbar-brand" href="#"><img class="logo" src="../img/hotspot.png" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="../index.html">INICIO</a>
+            <a class="nav-link link-light" href="../index.html">INICIO</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./planes-prepago.html">PLANES PREPAGO</a>
+            <a class="nav-link link-light" href="./planes-prepago.html">PLANES PREPAGO</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./planes-factura.html">PLANES POSPAGO</a>
+            <a class="nav-link link-light" href="./planes-factura.html">PLANES POSPAGO</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./us-club.html">US CLUB</a>
+            <a class="nav-link link-light active" aria-current="page" href="./us-club.html">US CLUB</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./ayuda.html">AYUDA</a>
+            <a class="nav-link link-light" href="./ayuda.html">AYUDA</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-    <div class="inicio-osclub">
-        <h2 class="titulo-osclub">US CLUB</h2>
-        <p class="parrafo-osclub">Registrate o si ya tenes una cuenta inicia sesión para comprar o contratar uno de nuestros servicios. Con cada compra sumás puntos para canjearlos por regalos y si contratas cualquiera de nuestros planes, contás con un código único para obtener descuentos y grandes beneficios.</p>
+  <div class="inicio-osclub">
+    <h2 class="titulo-osclub">US CLUB</h2>
+    <p class="parrafo-osclub">Registrate o si ya tenes una cuenta inicia sesión para comprar o contratar uno de nuestros
+      servicios. Con cada compra sumás puntos para canjearlos por regalos y si contratas cualquiera de nuestros planes,
+      contás con un código único para obtener descuentos y grandes beneficios.</p>
+  </div>
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
     </div>
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../img/fravega169.png" class="d-block img-carrousel" alt="fravega">
+        <div class="carousel-caption d-none d-md-block bg-dark p-2 text-light bg-opacity-75 rounded-2">
+          <h5>FRAVEGA</h5>
+          <p>Comprando en Fravega podes obtener un 10% de descuento adquiriendo cualquier electrodoméstico.</p>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="../img/fravega169.png" class="d-block img-carrousel" alt="fravega">
-            <div class="carousel-caption d-none d-md-block bg-dark p-2 text-light bg-opacity-75 rounded-2">
-              <h5>FRAVEGA</h5>
-              <p>Comprando en Fravega podes obtener un 10% de descuento adquiriendo cualquier electrodomestico.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="../img/supermercado169.jpg" class="d-block img-carrousel" alt="supermercado">
-            <div class="carousel-caption d-none d-md-block bg-dark p-2 text-light bg-opacity-75 rounded-2">
-              <h5>JUMBO</h5>
-              <p>Con Jumbo tenes un 15% de descuento para que puedas llenar tu carrito de compras.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="../img/disney-star169.png" class="d-block img-carrousel" alt="disneyplus-starplus">
-            <div class="carousel-caption d-none d-md-block bg-dark p-2 text-light bg-opacity-75 rounded-2">
-              <h5>COMBO +</h5>
-              <p>Solo por ser miembro de US CLUB, tendras acceso a Disney+ y Star+ sin costo adicional.</p>
-            </div>
-          </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../img/supermercado169.jpg" class="d-block img-carrousel" alt="supermercado">
+        <div class="carousel-caption d-none d-md-block bg-dark p-2 text-light bg-opacity-75 rounded-2">
+          <h5>JUMBO</h5>
+          <p>Con Jumbo tenés un 15% de descuento para que puedas llenar tu carrito de compras.</p>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+      </div>
+      <div class="carousel-item">
+        <img src="../img/disney-star169.png" class="d-block img-carrousel" alt="disneyplus-starplus">
+        <div class="carousel-caption d-none d-md-block bg-dark p-2 text-light bg-opacity-75 rounded-2">
+          <h5>COMBO +</h5>
+          <p>Solo por ser miembro de US CLUB, tendrás acceso a Disney+ y Star+ sin costo adicional.</p>
+        </div>
+      </div>
     </div>
-    <div class="inicio-osclub2">
-        <div class="contenedor-titulo-osclub2">
-            <h2 class="titulo-osclub2">¿TENÉS DUDAS DE CÓMO ASOCIARTE?</h2>
-            <p>Segui estos pasos</p>
-        </div>
-        <div class="pasos">
-            <div class="paso paso-1">
-                <div class="contenedor-img-paso">
-                    <img class="img-paso" src="../img/boton.png" alt="boton">
-                </div>
-                <div class="contenedor-numero">
-                    <p class="numero">1.</p>
-                </div>
-                <div class="contenedor-paso">
-                    <p class="parrafo-paso">Crea tu usuario oprimiendo el boton rojo que esta debajo.</p>
-                </div>
-            </div>
-            <div class="paso paso-2">
-                <div class="contenedor-img-paso">
-                    <img class="img-paso" src="../img/curriculum.png" alt="datos">
-                </div>
-                <div class="contenedor-numero">
-                    <p class="numero">2.</p>
-                </div>
-                <div class="contenedor-paso">
-                    <p class="parrafo-paso">Completa los datos necesarios que te pedimos a continuacion.</p>
-                </div>
-            </div>
-            <div class="paso paso-3">
-                <div class="contenedor-img-paso">
-                    <img class="img-paso" src="../img/usuario.png" alt="usuario">
-                </div>
-                <div class="contenedor-numero">
-                    <p class="numero">3.</p>
-                </div>
-                <div class="contenedor-paso">
-                    <p class="parrafo-paso">¡Listo! Ya podes elegir uno de nuestros servicios y comenzar a sumar puntos.</p>
-                </div>
-            </div>
-            <div class="crear-usuario">
-                <button class="boton-cu">CREAR USUARIO</button>
-            </div>
-        </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="inicio-osclub2">
+    <div class="contenedor-titulo-osclub2">
+      <h2 class="titulo-osclub2">¿TENÉS DUDAS DE CÓMO ASOCIARTE?</h2>
+      <p>Seguí estos pasos</p>
     </div>
-    <footer id="footer" class="footer">
-        <div class="empresa-footer"> 
-            <h4>Up Signal © 2022</h4>
+    <div class="pasos">
+      <div class="paso paso-1">
+        <div class="contenedor-img-paso">
+          <img class="img-paso" src="../img/boton.png" alt="boton">
         </div>
-        <div class="terminos-footer">
-            <ul class="footer-lista"> <!-- links no redireccionables -->
-                <li class="item-lista"><a href="#">Avisos legales</a></li>
-                <li class="item-lista"><a href="#">Terminos y condiciones</a></li>
-                <li class="item-lista"><a href="#">Centro de privacidad</a></li>
-                <li class="item-lista"><a href="#">Trabaja con nosotros</a></li>
-                <li class="item-lista"><a href="#">Todos los derechos reservados para Cellitti Santiago © 2022</a></li>
-            </ul>
+        <div class="contenedor-numero">
+          <p class="numero">1.</p>
         </div>
-    </footer>
-    <!-- aos animation -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <!-- boostrap javascript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <div class="contenedor-paso">
+          <p class="parrafo-paso">Creá tu usuario oprimiendo el botón rojo que está debajo.</p>
+        </div>
+      </div>
+      <div class="paso paso-2">
+        <div class="contenedor-img-paso">
+          <img class="img-paso" src="../img/curriculum.png" alt="datos">
+        </div>
+        <div class="contenedor-numero">
+          <p class="numero">2.</p>
+        </div>
+        <div class="contenedor-paso">
+          <p class="parrafo-paso">Completá los datos necesarios que te pedimos a continuación.</p>
+        </div>
+      </div>
+      <div class="paso paso-3">
+        <div class="contenedor-img-paso">
+          <img class="img-paso" src="../img/usuario.png" alt="usuario">
+        </div>
+        <div class="contenedor-numero">
+          <p class="numero">3.</p>
+        </div>
+        <div class="contenedor-paso">
+          <p class="parrafo-paso">¡Listo! Ya podes elegir uno de nuestros servicios y comenzar a sumar puntos.</p>
+        </div>
+      </div>
+      <div class="crear-usuario">
+        <button class="boton-cu">CREAR USUARIO</button>
+      </div>
+    </div>
+  </div>
+  <footer id="footer" class="footer">
+    <div class="empresa-footer">
+      <h4>Up Signal © 2022</h4>
+    </div>
+    <div class="terminos-footer">
+      <ul class="footer-lista">
+        <!-- links no redireccionables -->
+        <li class="item-lista"><a href="#">Avisos legales</a></li>
+        <li class="item-lista"><a href="#">Terminos y condiciones</a></li>
+        <li class="item-lista"><a href="#">Centro de privacidad</a></li>
+        <li class="item-lista"><a href="#">Trabaja con nosotros</a></li>
+        <li class="item-lista"><a href="#">Todos los derechos reservados para Cellitti Santiago © 2022</a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- boostrap javascript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

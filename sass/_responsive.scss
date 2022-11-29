@@ -1,0 +1,429 @@
+@media (max-width:576px) {
+    /* footer */
+
+    footer {
+        height: max-content;
+
+        .footer-lista {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 0;
+        }
+    }
+
+    /* main */
+    .main0 {
+        background-image: url(../img/antena.jpg);
+        width: 100%;
+        height: 600px;
+        background-size: cover;
+
+        h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        div {
+            width: 100%;
+            padding: 0 20px;
+
+            p {
+                text-align: center;
+                font-size: 1rem;
+                padding: 20px;
+            }
+        }
+    }
+
+    /* sections */
+
+    .info-main {
+        section:nth-child(1) {
+            padding-top: 200px;
+            margin-bottom: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: auto;
+        }
+
+        section:nth-child(2) {
+            @extend section:nth-child(1);
+            flex-direction: column-reverse;
+            padding-top: 0;
+        }
+
+        section:nth-child(3) {
+            @extend section:nth-child(1);
+            padding-top: 0;
+        }
+
+        section:nth-child(4) {
+            @extend section:nth-child(2)
+        }
+
+        section {
+            img {
+                width: 100%;
+            }
+
+            div {
+                padding: 20px;
+                width: 100%;
+
+                h2 {
+                    font-size: 1.2rem;
+                    padding: 20px;
+                }
+
+                p {
+                    font-size: 1rem;
+                    padding: 20px;
+                }
+
+                a {
+                    font-size: 1.2rem;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+    /* -----------------------planes-prepago-------------------- */
+
+    .menu-combos {
+        .titulo-menu-combos {
+            font-size: 2rem;
+        }
+    }
+
+    .combos {
+        .combo {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(5, auto);
+
+            .contenedor-apps {
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    padding: 10px;
+                    width: 180px;
+                    height: max-content;
+                }
+            }
+        }
+    }
+
+    .combos {
+        .combo {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(5, auto);
+
+            .contenedor-titulo,
+            .contenedor-titulo2,
+            .contenedor-titulo3,
+            .contenedor-titulo4 {
+                border-top-right-radius: 12px;
+                border-bottom-left-radius: 0;
+                height: auto;
+
+                .titulo-combo,
+                .titulo-combo2,
+                .titulo-combo3,
+                .titulo-combo4 {
+                    font-size: 3rem;
+                    padding: 5px;
+                    margin: auto;
+                }
+            }
+
+            .contenedor-apps {
+                img {
+                    padding: 2px;
+                }
+            }
+
+            .contenedor-lista {
+                margin-left: auto;
+                margin-right: auto;
+
+                .lista-combo {
+                    padding-top: 20px;
+                }
+            }
+
+            .contenedor-precio {
+                .precio-combo {
+                    font-size: 2.5rem;
+                }
+            }
+
+            .contenedor-boton {
+                margin-bottom: 10px;
+
+                .boton {
+                    padding: 10px 20px;
+                    font-size: 1.25rem;
+                }
+            }
+        }
+    }
+
+    .combos-extra {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        width: 100%;
+        margin-bottom: 50px;
+
+        .combo-extra {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-row: 1fr 1fr 1fr 1fr;
+            margin: 30px;
+            text-align: center;
+            border-radius: 4px;
+            background-color: #292929c2;
+            border: 1px #3f3f3f solid;
+            transition: all 0.2s;
+
+            &:hover {
+                background-color: #212529;
+                box-shadow: #3d3d3d 1px 1px 35px 1px;
+            }
+
+            .contenedor-titulo-extra {
+                width: 100%;
+
+                .titulo-combo-extra {
+                    padding: 8px;
+                    padding-left: 15px;
+                    font-size: 50px;
+                    font-weight: 900;
+                    text-align: center;
+                }
+            }
+
+            .contenedor-precio-extra {
+                width: 100%;
+
+                .precio-combo-extra {
+                    font-size: 40px;
+                    font-weight: 900;
+                    padding: 10px;
+                    margin-bottom: 15px;
+                    background-color: #53bdeb;
+                }
+            }
+
+            .contenedor-lista-extra {
+                width: 100%;
+
+                .lista-combo-extra {
+                    padding: 5px;
+
+                    .item-lista-combo-extra {
+                        list-style: none;
+                        padding-left: 15px;
+                        list-style-position: inside;
+                        padding-bottom: 20px;
+                        font-weight: 500;
+
+                        .item-lista-combo-extra::before {
+                            content: '';
+                            width: 15px;
+                            height: 15px;
+                            margin-right: 10px;
+                            display: inline-block;
+                            background-image: url(../img/check.png);
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: cover;
+                        }
+                    }
+                }
+            }
+
+            .contenedor-boton-extra {
+                width: 100%;
+
+                .boton-extras {
+                    background-color: #3f3f3f;
+                    color: #ffffff;
+                    border-radius: 4px;
+                    padding: 10px 20px;
+                    margin: 30px;
+                    font-size: 20px;
+                    font-weight: 900;
+                    cursor: pointer;
+                    transition: all 0.2s;
+                    border: 0;
+
+                    .boton-extras:hover {
+                        background-color: #3f3f3f;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    /* ----------------------------planes-pospago-------------- */
+
+    .menu-combos-pospago {
+        .titulo-menu-combos-pospago {
+            font-size: 2rem;
+        }
+    }
+
+    .combos-pospago {
+        width: 100%;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3, auto);
+
+        .combo-pospago {
+            width: 90%;
+            margin: 0 auto 70px auto;
+
+            .contenedor-titulo-pospago {
+                .titulo-combo-pospago {
+                    font-size: 2.5rem;
+                }
+            }
+
+            .contenedor-precio-pospago {
+                .precio-combo-pospago {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        .lista-combo-pospago {
+            .item-lista-combo-pospago {
+                padding: 0 20px;
+            }
+        }
+    }
+
+    /* --------------------------------us-club------------------ */
+
+
+    .inicio-osclub {
+        .titulo-osclub {
+            font-size: 2rem;
+        }
+    }
+
+    .img-carrousel {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .contenedor-titulo-osclub2 {
+        .titulo-osclub2 {
+            font-size: 2rem;
+        }
+    }
+
+    .pasos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* -----------------------------ayuda------------------------ */
+
+    .contenedor-info-form {
+        margin-top: 70px;
+
+        .contenedor-titulo-contacto {
+            h2 {
+                font-size: 2rem;
+            }
+        }
+
+        .contenedor-parrafo-contacto {
+            padding: 0px 20px;
+            font-size: 1rem;
+        }
+    }
+
+    .contenedor-form-contacto {
+        width: 100%;
+        margin-top: 125px;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 10px;
+            width: 100%;
+
+            .name-complete {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 10px;
+                width: 100%;
+            }
+
+            .date-contact {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 10px;
+                width: 100%;
+            }
+
+            .user-region {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 10px;
+                width: 100%;
+            }
+
+            .consultas {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 10px;
+                width: 100%;
+
+                .query {
+                    width: 90%;
+                }
+            }
+
+            .area-submit {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 10px;
+                width: 100%;
+            }
+        }
+    }
+
+    .input-form, .submit {
+        width: 90%;
+    }
+
+    .newsletter {
+        padding-top: 0px;
+
+        p {
+            text-align: center;
+            padding: 20px 20px;
+        }
+
+        .suscripcion {
+            justify-content: center;
+        }
+    }
+}

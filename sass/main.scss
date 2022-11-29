@@ -1,0 +1,156 @@
+body {
+    background: linear-gradient(#000000bd, #000000bd), url("../img/Amoled.jpg");
+    font-family: "Roboto", sans-serif;
+    color: white;
+
+    a {
+        text-decoration: none;
+        color: #ffffff;
+
+        &:hover {
+            text-decoration: none;
+            color: #ffffff;
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    height: 90px;
+    border-top: #1f1f1f 1px solid;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .empresa-footer {
+
+        h4 {
+            text-align: center;
+            padding: 10px;
+            color: #808080;
+            font-size: 16px;
+        }
+    }
+
+    .footer-lista {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        li {
+            list-style: none;
+            padding: 0px 5px;
+
+            a {
+                color: #4b4b4b;
+
+                &:hover {
+                    list-style: none;
+                    color: #4b4b4b;
+                }
+            }
+        }
+    }
+}
+
+.nav-bs {
+    background-color: #000000;
+    border-bottom: #1f1f1f 1px solid;
+}
+
+.logo {
+    width: 38px;
+}
+
+.navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ------------------------------------------------index -------------------------------------------------------*/
+
+.info-main {
+    height: auto;
+    width: 100%;
+
+    section {
+        display: flex;
+        width: 100%;
+        height: auto;
+        padding-bottom: 100px;
+        background-color: #000000;
+
+        div {
+            padding: 100px;
+
+            h2 {
+                font-size: 2.5rem;
+                text-align: left;
+                font-weight: 900;
+                color: #ffffff;
+            }
+
+            p {
+                text-align: left;
+                font-size: 1rem;
+                padding-top: 30px;
+                margin-bottom: 50px;
+            }
+
+            .boton-info {
+                border: 1px solid #ffffff;
+                cursor: pointer;
+                font-weight: 900;
+                padding: 10px 20px;
+                margin-left: 20px;
+            }
+
+            .boton-info2 {
+                @extend .boton-info;
+                margin-left: 30px;
+            }
+        }
+
+        img {
+            width: 50%;
+            height: max-content;
+        }
+    }
+}
+
+
+.main0 {
+    background-image: url(../img/antena.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 100%;
+    height: 600px;
+
+    h1 {
+        text-align: center;
+        padding: 30px 0px;
+        font-size: 4rem;
+        margin: 0;
+        color: #4a4a4a;
+    }
+
+    div {
+        p {
+            text-align: center;
+            padding: 0px 200px 0px;
+            font-size: 1rem;
+            width: 100%;
+            color: #4a4a4a;
+        }
+    }
+}
+
+
+
+@import 'planes-prepago';
+@import 'planes-pospago';
+@import 'us-club';
+@import 'ayuda';
+
+@import 'responsive';

@@ -1,0 +1,220 @@
+/* ----------MENU COMBOS POSPAGO---------- */
+
+.menu-combos-pospago {
+    margin: 70px 0 100px;
+    width: auto;
+    height: auto;
+    padding: 40px;
+    background-color: #000000af;
+    border-top: 1px #1f1f1f solid;
+    border-bottom: 1px #1f1f1f solid;
+
+    .titulo-menu-combos-pospago {
+        text-align: center;
+        font-size: 4rem;
+        font-weight: 900;
+    }
+
+    .descripcion-menu-combos-pospago {
+        text-align: center;
+        color: #ffffff;
+
+        .link-parrafo {
+            font-weight: 900;
+        }
+    }
+}
+
+/* 2 */
+
+.menu-combos-pospago2 {
+    border-top: 1px #1f1f1f solid;
+    border-bottom: 1px #1f1f1f solid;
+    margin: 70px 0;
+    width: auto;
+    height: auto;
+    padding: 40px;
+    background-color: #000000af;
+
+    .descripcion-menu-combos-pospago2 {
+        color: #ffffff;
+        text-align: center;
+        font-size: 1rem;
+
+        .link-parrafo2 {
+            font-weight: 900;
+            text-decoration: underline;
+        }
+    }
+}
+
+/* -----------COMBOS------------- */
+
+.combos-pospago {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    width: 100%;
+    justify-content: space-between;
+
+    & .combo-pospago:nth-child(1) {
+        .contenedor-titulo-pospago {
+            background-color: #590e0e;
+
+            .titulo-combo-pospago {
+                color: #590e0e;
+            }
+        }
+
+        .contenedor-precio-pospago {
+            background-color: #590e0e;
+        }
+    }
+
+    & .combo-pospago:nth-child(2) {
+        .contenedor-titulo-pospago {
+            background-color: #2ba99d;
+
+            .titulo-combo-pospago {
+                color: #2ba99d;
+            }
+        }
+
+        .contenedor-precio-pospago {
+            background-color: #2ba99d;
+        }
+    }
+
+    & .combo-pospago:nth-child(3) {
+        .contenedor-titulo-pospago {
+            background-color: #bea042;
+
+            .titulo-combo-pospago {
+                color: #bea042;
+            }
+        }
+
+        .contenedor-precio-pospago {
+            background-color: #bea042;
+        }
+    }
+
+    .combo-pospago {
+        display: grid;
+        grid-template-rows: repeat(5, auto);
+        grid-template-columns: auto;
+        border: 1px #3f3f3f solid;
+        margin: 20px;
+        text-align: center;
+        border-radius: 4px;
+        background-color: #aeaeae;
+        transition: all 0.2s;
+
+        &:hover {
+            scale: 1.015;
+            box-shadow: #3f3f3f 1px 1px 10px 1px;
+            background-color: #eeeeee;
+        }
+
+        .contenedor-titulo-pospago {
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+
+            .titulo-combo-pospago {
+                border-radius: 4px;
+                margin: 20px 15px;
+                font-size: 3rem;
+                text-align: center;
+                background-color: #eeeeee;
+                font-weight: 900;
+            }
+        }
+
+        .contenedor-precio-pospago {
+            background-color: #000000;
+
+            .precio-combo-pospago {
+                display: inline-block;
+                border-top-left-radius: 125px;
+                border-bottom-left-radius: 16px;
+                border-bottom-right-radius: 125px;
+                border-top-right-radius: 16px;
+                font-size: 2.5rem;
+                font-weight: 900;
+                padding: 10px 20px;
+                background-color: #212529;
+            }
+        }
+
+        .contenedor-logos-app {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            padding-top: 10px;
+
+            img {
+                width: 50px;
+            }
+
+            .img2,
+            .img3 {
+                width: 58px;
+            }
+        }
+
+        .lista-combo-pospago {
+            margin-top: 20px;
+
+            .item-lista-combo-pospago::before {
+                content: '';
+                width: 15px;
+                height: 15px;
+                margin-right: 10px;
+                display: inline-block;
+                background-image: url("../img/pngwing.com.png");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+            }
+
+            .item-lista-combo-pospago {
+                list-style: none;
+                padding-left: 15px;
+                padding-bottom: 20px;
+                list-style-position: inside;
+                text-align: left;
+                color: #292929;
+                font-weight: 500;
+
+                .span-lista-pospago {
+                    color: #000000;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .contenedor-boton-pospago {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .boton-pospago {
+                background-color: #212529c2;
+                color: #ffffff;
+                border-radius: 4px;
+                padding: 10px 20px;
+                margin-bottom: 10px;
+                font-size: 20px;
+                font-weight: 900;
+                border: 0;
+                transition: all 0.2s;
+
+                &:hover {
+                    border-radius: 4px;
+                    background-color: #212529;
+                }
+            }
+        }
+    }
+}
