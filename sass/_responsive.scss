@@ -39,7 +39,7 @@
     /* sections */
 
     .info-main {
-        section:nth-child(1) {
+        .section-header {
             padding-top: 200px;
             margin-bottom: 0;
             display: flex;
@@ -48,19 +48,19 @@
             height: auto;
         }
 
-        section:nth-child(2) {
-            @extend section:nth-child(1);
+        .section-header2 {
+            @extend .section-header;
             flex-direction: column-reverse;
             padding-top: 0;
         }
 
-        section:nth-child(3) {
-            @extend section:nth-child(1);
+        .section-header3 {
+            @extend .section-header;
             padding-top: 0;
         }
 
-        section:nth-child(4) {
-            @extend section:nth-child(2)
+        .section-header4 {
+            @extend .section-header2;
         }
 
         section {
@@ -410,7 +410,8 @@
         }
     }
 
-    .input-form, .submit {
+    .input-form,
+    .submit {
         width: 90%;
     }
 
